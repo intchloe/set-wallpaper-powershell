@@ -12,7 +12,12 @@ $var = $var -replace "``n","" | select -first 1
 Invoke-WebRequest $URL$var".jpg" -OutFile $DEST
 
 Set-ItemProperty -path 'HKCU:\Control Panel\Desktop\' -name wallpaper -value $DEST
+
+#Måste spamma detta eftersom Windows är knas
 rundll32.exe user32.dll, UpdatePerUserSystemParameters
 rundll32.exe user32.dll, UpdatePerUserSystemParameters  
+rundll32.exe user32.dll, UpdatePerUserSystemParameters
+rundll32.exe user32.dll, UpdatePerUserSystemParameters  
+rundll32.exe user32.dll, UpdatePerUserSystemParameters
 rundll32.exe user32.dll, UpdatePerUserSystemParameters  
 rundll32.exe user32.dll, UpdatePerUserSystemParameters
